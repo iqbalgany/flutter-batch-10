@@ -33,19 +33,21 @@ class FootballPlayerWidget extends StatelessWidget {
                     : null,
                 child: Icon(Icons.person),
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    name.isNotEmpty ? name : '?',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red,
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name.isNotEmpty ? name : '?',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red,
+                      ),
                     ),
-                  ),
-                  Text(country, style: TextStyle(fontSize: 12)),
-                ],
+                    Text(country, style: TextStyle(fontSize: 12)),
+                  ],
+                ),
               ),
               Spacer(),
               if (isFavorite) Icon(Icons.star, color: Colors.amber),

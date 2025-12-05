@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_batch_10/pages/football_player_page.dart';
+import 'package:flutter_batch_10/pages/day_3/football_player_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
       home: FootballPlayerPage(),
     );
   }
